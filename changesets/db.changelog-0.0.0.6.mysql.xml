@@ -3,8 +3,8 @@
     xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
     xmlns:pro="http://www.liquibase.org/xml/ns/pro"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-    <!-- Estructura de la base de datos cursoliquibasepractica -->
-    <changeSet author="JonathanDev" id="1006">
+    <!-- Estructura de la base de datos cursoliquibasepractica_prod -->
+    <changeSet author="JonathanDev" id="1001">
         <createTable tableName="jobs">
             <column autoIncrement="true" name="PK_Jobs_JobsId" type="INT">
                 <constraints nullable="false" primaryKey="true"/>
@@ -19,6 +19,28 @@
                 <constraints nullable="false"/>
             </column>
             <column name="salary" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="JonathanDev" id="1002">
+        <createTable tableName="players">
+            <column autoIncrement="true" name="PK_Players_PlayersId" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="age" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone" type="VARCHAR(30)">
                 <constraints nullable="false"/>
             </column>
             <column name="address" type="VARCHAR(30)">
