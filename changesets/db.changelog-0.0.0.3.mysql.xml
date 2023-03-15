@@ -1,0 +1,50 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="JonathanDev" id="1003">
+        <createTable tableName="jobs">
+            <column autoIncrement="true" name="PK_Jobs_JobsId" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="description" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="shift" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="salary" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="JonathanDev" id="1004">
+        <createTable tableName="players">
+            <column autoIncrement="true" name="PK_Players_PlayersId" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="age" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
