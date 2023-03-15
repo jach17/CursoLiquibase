@@ -1,0 +1,41 @@
+Reference Database: root@localhost @ jdbc:mysql://localhost:3306/cursoliquibasepractica_prod (Default Schema: cursoliquibasepractica_prod)
+Comparison Database: root@localhost @ jdbc:mysql://localhost:3306/cursoliquibasepractica (Default Schema: cursoliquibasepractica)
+Compared Schemas: cursoliquibasepractica_prod -> cursoliquibasepractica
+Product Name: EQUAL
+Product Version: EQUAL
+Missing Catalog(s): NONE
+Unexpected Catalog(s): NONE
+Changed Catalog(s): NONE
+Missing Column(s): NONE
+Unexpected Column(s): 
+     cursoliquibasepractica.players.PK_Players_PlayersId
+     cursoliquibasepractica.players.address
+     cursoliquibasepractica.players.age
+     cursoliquibasepractica.players.email
+     cursoliquibasepractica.players.name
+     cursoliquibasepractica.players.phone
+Changed Column(s): NONE
+Missing Foreign Key(s): NONE
+Unexpected Foreign Key(s): NONE
+Changed Foreign Key(s): NONE
+Missing Index(s): NONE
+Unexpected Index(s): 
+     PRIMARY UNIQUE  ON cursoliquibasepractica.players(PK_Players_PlayersId)
+Changed Index(s): NONE
+Missing Primary Key(s): NONE
+Unexpected Primary Key(s): 
+     PRIMARY on cursoliquibasepractica.players(PK_Players_PlayersId)
+Changed Primary Key(s): NONE
+Missing Sequence(s): NONE
+Unexpected Sequence(s): NONE
+Changed Sequence(s): NONE
+Missing Table(s): NONE
+Unexpected Table(s): 
+     players
+Changed Table(s): NONE
+Missing Unique Constraint(s): NONE
+Unexpected Unique Constraint(s): NONE
+Changed Unique Constraint(s): NONE
+Missing View(s): NONE
+Unexpected View(s): NONE
+Changed View(s): NONE
