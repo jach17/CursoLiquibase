@@ -1,0 +1,31 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <!-- Generara una tabla con al menos cinco atributos -->
+    <changeSet author="JonathanDev" id="10001">
+        <createTable tableName="Players">
+            <column autoIncrement="true" name="PK_Players_PlayersId" type="int">
+                <constraints primaryKey="true" primaryKeyName="PK_Players_PlayersId"/>
+            </column>
+            <column name="name" type="nvarchar(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="age" type="nvarchar(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="nvarchar(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone" type="nvarchar(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="nvarchar(30)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
